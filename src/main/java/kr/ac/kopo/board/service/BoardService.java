@@ -15,7 +15,8 @@ public interface BoardService {
     BoardDTO get(Long bno);
 //    삭제 기능
     void removeWithReplies(Long bno);
-
+//    수정 기능
+    void modify(BoardDTO boardDTO);
 
 //    Entity를 DTO로 변환하는 메소드
     default BoardDTO entityToDTO(Board board, Member member, Long replyCount){
