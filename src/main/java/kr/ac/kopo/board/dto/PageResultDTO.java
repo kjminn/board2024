@@ -32,7 +32,7 @@ public class PageResultDTO<DTO, EN> {
     private List<Integer> pageList;
 
     public PageResultDTO(Page<EN> result, Function<EN, DTO> fn){
-//        매개변수로 전달받은 결과행들과 Entity를 DTO로 변환한 fn을 사용해서 GuestbookDTO객체를 저장한 리스트
+//        매개변수로 전달받은 결과행들과 Entity를 DTO로 변환한 fn을 사용해서 BoardDTO객체를 저장한 리스트
         dtoList = result.stream().map(fn).collect(Collectors.toList());
         totalPage = result.getTotalPages();//301개의 행을 갖고 있다면 전체페이수는 31페이지이다.
         makePageList(result.getPageable());
