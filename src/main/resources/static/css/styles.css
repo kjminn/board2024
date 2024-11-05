@@ -4227,7 +4227,7 @@ textarea.form-control-lg {
 }
 
 .card-text:last-child {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .card-link + .card-link {
